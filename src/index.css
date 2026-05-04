@@ -1,0 +1,41 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", sans-serif; /* Opsional: Agar font lebih modern */
+  overflow-x: hidden;
+}
+
+/* Warna khusus untuk teks warning agar lebih 'emas' */
+.text-warning {
+  color: #ffd700 !important;
+}
+
+.bg-warning {
+  background-color: #ffd700 !important;
+}
+
+.btn-warning {
+  background-color: #ffd700 !important;
+  border-color: #ffd700 !important;
+}
+* {
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+/* Pastikan section light tetap rapi di dark mode */
+[data-bs-theme="dark"] .bg-light {
+  background-color: #2b3035 !important; /* Warna abu gelap bawaan Bootstrap dark */
+}
+
+[data-bs-theme="dark"] .bg-white {
+  background-color: #212529 !important; /* Warna hitam bawaan Bootstrap dark */
+}
+
+[data-bs-theme="dark"] .card {
+  background-color: #2c3034;
+  color: white;
+}
