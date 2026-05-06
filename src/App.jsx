@@ -15,11 +15,11 @@ function App() {
     <div className="pt-5">
       <NavigationBar />
       <Hero />
+      <Philosophy />
+      <VisiMisi />
       <div id="services">
         <Services />
       </div>
-      <Philosophy />
-      <VisiMisi />
       <Team />
       <ProductList />
       <Partners />

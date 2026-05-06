@@ -32,7 +32,7 @@ const NavigationBar = () => {
 
   return (
     <motion.div variants={{ visible: { y: 0 }, hidden: { y: "-100%" } }} animate={hidden ? "hidden" : "visible"} transition={{ duration: 0.35, ease: "easeInOut" }} style={{ position: "fixed", top: 0, width: "100%", zIndex: 1050 }}>
-      <Navbar bg={isDarkMode ? "dark" : "white"} expand="lg" className="py-2 shadow-sm">
+      <Navbar bg={isDarkMode ? "dark" : "white"} expand="lg" className="py-2 shadow-sm" style={{ fontSize: "1.2rem" }}>
         <Container>
           <Navbar.Brand href="#home">
             <img src={logoImg} alt="Logo PT Golden IB" height="50" />

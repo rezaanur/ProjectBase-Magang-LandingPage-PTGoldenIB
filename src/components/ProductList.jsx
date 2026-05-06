@@ -33,17 +33,43 @@ const ProductList = () => {
   return (
     <div id="products" className="py-5 bg-white">
       <Container>
-        {/* Style Custom untuk Tombol Tokopedia */}
+        {/* Style Custom untuk Responsivitas Handphone */}
         <style>
           {`
             .btn-tokopedia {
               background-color: #03AC0E !important;
               border-color: #03AC0E !important;
               color: white !important;
+              transition: all 0.3s ease;
             }
             .btn-tokopedia:hover {
               background-color: #028e0b !important;
               border-color: #028e0b !important;
+              transform: translateY(-2px);
+            }
+
+            /* Pengaturan khusus layar handphone (Mobile) */
+            @media (max-width: 576px) {
+              .product-card {
+                max-width: 290px; /* Membatasi lebar card agar tidak terlalu lebar di HP */
+                margin: 0 auto; /* Menengahkan card */
+              }
+              .product-img-container {
+                height: 180px !important; /* Mengecilkan tinggi gambar di HP */
+              }
+              .product-title {
+                font-size: 1rem !important; /* Mengecilkan ukuran judul produk */
+              }
+              .product-price {
+                font-size: 1.1rem !important; /* Mengecilkan ukuran teks harga */
+              }
+              .product-desc {
+                font-size: 0.8rem !important; /* Mengecilkan teks deskripsi */
+              }
+              .btn-tokopedia {
+                font-size: 0.85rem !important; /* Mengecilkan ukuran tombol */
+                padding: 8px 12px !important;
+              }
             }
           `}
         </style>
@@ -55,12 +81,13 @@ const ProductList = () => {
 
         <Row className="g-4 justify-content-center">
           {productData.map((product, index) => (
-            <Col lg={4} md={6} key={product.id}>
+            /* xs={10} memastikan card tidak penuh 100% lebar layar hp, menyisakan jarak di kiri-kanan */
+            <Col xs={10} sm={6} lg={4} key={product.id}>
               <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: index * 0.2 }} whileHover={{ y: -10 }}>
-                <Card className="h-100 border-0 shadow-sm transition-all overflow-hidden">
-                  <div className="position-relative overflow-hidden">
-                    <motion.div whileHover={{ scale: 1.1 }} transition={{ duration: 0.4 }}>
-                      <Card.Img variant="top" src={product.image} style={{ height: "300px", objectFit: "cover" }} />
+                <Card className="product-card h-100 border-0 shadow-sm transition-all overflow-hidden">
+                  <div className="position-relative overflow-hidden product-img-container" style={{ height: "250px" }}>
+                    <motion.div whileHover={{ scale: 1.1 }} transition={{ duration: 0.4 }} className="h-100">
+                      <Card.Img variant="top" src={product.image} style={{ height: "100%", objectFit: "cover" }} />
                     </motion.div>
                     <Badge bg="success" className="position-absolute top-0 end-0 m-3 fw-bold">
                       {product.category}
@@ -72,12 +99,12 @@ const ProductList = () => {
                       <div className="text-warning d-flex align-items-center">
                         <FaStar className="me-1" /> <span className="small fw-bold text-dark">{product.rating}</span>
                       </div>
-                      <h5 className="fw-bold text-success mb-0">{product.price}</h5>
+                      <h5 className="product-price fw-bold text-success mb-0">{product.price}</h5>
                     </div>
-                    <Card.Title className="fw-bold mb-2" style={{ fontSize: "1.1rem" }}>
+                    <Card.Title className="product-title fw-bold mb-2" style={{ fontSize: "1.1rem" }}>
                       {product.name}
                     </Card.Title>
-                    <Card.Text className="text-secondary small mb-4">{product.desc}</Card.Text>
+                    <Card.Text className="product-desc text-secondary small mb-4">{product.desc}</Card.Text>
 
                     <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                       <Button className="w-100 rounded-pill fw-bold d-flex align-items-center justify-content-center gap-2 btn-tokopedia" href={product.link} target="_blank">

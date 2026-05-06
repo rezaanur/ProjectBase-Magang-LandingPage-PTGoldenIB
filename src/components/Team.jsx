@@ -61,7 +61,7 @@ const Team = () => {
         <div className="position-absolute bottom-0 start-0 bg-warning" style={{ width: "100%", height: "2px" }}></div>
       </div>
 
-      {/* LEVEL 3: Divisi Utama[cite: 3] */}
+      {/* LEVEL 3: Divisi Utama */}
       <Row className="justify-content-center mt-0 g-2 ">
         {/* Garis vertikal kecil untuk masing-masing divisi */}
         {["FINANCE", "SOSCOM", "MARKETPLACE", "GUDANG"].map((_, i) => (
@@ -75,11 +75,11 @@ const Team = () => {
         ))}
       </Row>
 
-      {/* LEVEL 4: Staff & Admin[cite: 3] */}
+      {/* LEVEL 4: Staff & Admin */}
       <Row className="justify-content-center mt-2 g-2">
         <Col md={3} className="d-none d-md-block"></Col>
 
-        {/* Jalur Soscom Staff[cite: 3] */}
+        {/* Jalur Soscom Staff */}
         <Col md={3} xs={6} className="d-flex flex-column align-items-center mt-2">
           <div className="bg-warning" style={{ width: "2px", height: "15px" }}></div>
           <TeamCard name="Pelangi Fortuna R" role="ADMIN" delay={0.7} />
@@ -87,7 +87,7 @@ const Team = () => {
           <TeamCard name="Ibnu Fadil Ar rizal" role="CRM" delay={0.8} />
         </Col>
 
-        {/* Jalur Marketplace Staff[cite: 3] */}
+        {/* Jalur Marketplace Staff */}
         <Col md={3} xs={6} className="d-flex flex-column align-items-center">
           <div className="bg-warning" style={{ width: "2px", height: "15px" }}></div>
           <TeamCard name="Azka Amalina" role="ADMIN" delay={0.7} />
