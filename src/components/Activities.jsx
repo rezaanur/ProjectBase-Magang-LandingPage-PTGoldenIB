@@ -8,8 +8,8 @@ import bukber3 from "../assets/bukber3.jpg";
 import pahawang1 from "../assets/kepahawang.jpg";
 import pahawang2 from "../assets/kepahawang2.jpg";
 import pahawang3 from "../assets/kepahawang3.jpg";
-import kalianda1 from "../assets/pantaiKalianda1.jpg";
-import kalianda2 from "../assets/pantaiKalianda2.jpg";
+import kalianda1 from "../assets/pantaiKalianda1.JPG";
+import kalianda2 from "../assets/pantaiKalianda2.JPG";
 
 const activityData = [
   {
