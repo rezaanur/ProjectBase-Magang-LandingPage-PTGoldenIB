@@ -19,9 +19,6 @@ const Hero = () => {
                 <Button variant="warning" href="#services" size="lg" className="rounded-pill px-4 fw-bold">
                   Eksplorasi Layanan
                 </Button>
-                <Button variant="outline-dark" href="#partners" size="lg" className="rounded-pill px-4">
-                  Mitra
-                </Button>
               </div>
             </motion.div>
           </Col>

@@ -8,6 +8,7 @@ import Team from "./components/Team";
 import Footer from "./components/Footer";
 import Partners from "./components/Partners"; // Import ini
 import Activities from "./components/Activities"; // Import ini
+import ProductList from "./components/ProductList";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Philosophy />
       <VisiMisi />
       <Team />
+      <ProductList />
       <Partners />
       <Activities />
       <Footer />

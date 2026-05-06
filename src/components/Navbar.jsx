@@ -9,7 +9,7 @@ const NavigationBar = () => {
   const { scrollY } = useScroll();
 
   // LOGIKA DARK MODE
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(true);
 
   // Efek untuk mengubah atribut tema di tag <html>
   useEffect(() => {
@@ -57,7 +57,7 @@ const NavigationBar = () => {
               <Nav.Link href="#home">Home</Nav.Link>
               <Nav.Link href="#services">Services</Nav.Link>
               <Nav.Link href="#about">About</Nav.Link>
-              <Button variant="warning" className="rounded-pill px-4 fw-bold ms-lg-3 mt-3 mt-lg-0 text-white">
+              <Button variant="warning" className="rounded-pill px-4 fw-bold ms-lg-3 mt-3 mt-lg-0 text-white" target="_blank" href="https://wa.me/6289632107029?text=saya ingin berkonsultasi">
                 Hubungi Kami
               </Button>
             </Nav>

@@ -26,10 +26,18 @@ const Team = () => {
 
   return (
     <Container className="py-5 bg-light rounded-4 my-5 overflow-hidden">
-      <div className="text-center mb-5">
-        <h2 className="fw-bold">Struktur Organisasi</h2>
-        <p className="text-secondary small ls-2 text-uppercase">PT GOLDEN IB</p>
-      </div>
+      <motion.div
+        className="text-center mb-5"
+        initial={{ opacity: 0, y: -20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }} // Animasi hanya berjalan sekali saat di-scroll
+        transition={{ duration: 0.8 }}
+      >
+        <div className="text-center mb-5">
+          <h2 className="fw-bold">Struktur Organisasi</h2>
+          <p className="text-secondary small ls-2 text-uppercase">PT GOLDEN IB</p>
+        </div>
+      </motion.div>
 
       {/* LEVEL 1: CEO */}
       <Row className="justify-content-center mb-2">
@@ -84,7 +92,7 @@ const Team = () => {
           <div className="bg-warning" style={{ width: "2px", height: "15px" }}></div>
           <TeamCard name="Azka Amalina" role="ADMIN" delay={0.7} />
           <div className="bg-warning" style={{ width: "2px", height: "15px" }}></div>
-          <TeamCard name="Hikmatul Adhimah" role="CONTENT CREATOR" delay={0.8} />
+          <TeamCard name="Nur Rahman R" role="CONTENT CREATOR" delay={0.8} />
         </Col>
 
         <Col md={3} className="d-none d-md-block"></Col>

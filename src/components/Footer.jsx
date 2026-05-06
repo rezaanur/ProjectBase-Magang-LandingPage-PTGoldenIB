@@ -18,7 +18,7 @@ const Footer = () => {
             </p>
             <p className="small text-secondary">
               <FaWhatsapp className="me-2 text-warning" />
-              0895-0181-xxxx
+              0896-3210-7029
             </p>
           </Col>
           <Col lg={4}>
