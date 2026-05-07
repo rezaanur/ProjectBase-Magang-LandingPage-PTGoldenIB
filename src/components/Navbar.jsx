@@ -54,9 +54,9 @@ const NavigationBar = () => {
 
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto me-4 align-items-center">
-              <Nav.Link href="#home">Home</Nav.Link>
-              <Nav.Link href="#services">Services</Nav.Link>
-              <Nav.Link href="#about">About</Nav.Link>
+              <Nav.Link href="#home">Beranda</Nav.Link>
+              <Nav.Link href="#services">Layanan</Nav.Link>
+              <Nav.Link href="#about">Tentang Kami</Nav.Link>
               <Button variant="warning" className="rounded-pill px-4 fw-bold ms-lg-3 mt-3 mt-lg-0 text-white" target="_blank" href="https://wa.me/6289632107029?text=saya ingin berkonsultasi">
                 Hubungi Kami
               </Button>
