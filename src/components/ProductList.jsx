@@ -7,16 +7,16 @@ import kalinShoe from "../assets/pembersihSepatu.jpg";
 import masterClean from "../assets/pembersihMesinCuci.jpg";
 
 const productData = [
-  {
-    id: 1,
-    name: "Kalin White Shoe Cleaner",
-    category: "Shoe Care",
-    price: "Rp 15.999",
-    image: kalinShoe,
-    rating: 5.0,
-    desc: "Krim pembersih sepatu tanpa air untuk bahan kulit & canvas.",
-    link: "https://www.tokopedia.com/sang-maha-raja-store-21/krim-pembersih-sepatu-putih-kalin-untuk-bahan-kulit-sneaker-canvas-tanpa-air-1731004193386824761",
-  },
+  // {
+  //   id: 1,
+  //   name: "Kalin White Shoe Cleaner",
+  //   category: "Shoe Care",
+  //   price: "Rp 15.999",
+  //   image: kalinShoe,
+  //   rating: 5.0,
+  //   desc: "Krim pembersih sepatu tanpa air untuk bahan kulit & canvas.",
+  //   link: "https://www.tokopedia.com/sang-maha-raja-store-21/krim-pembersih-sepatu-putih-kalin-untuk-bahan-kulit-sneaker-canvas-tanpa-air-1731004193386824761",
+  // },
   {
     id: 2,
     name: "Master Clean Pembersih Mesin Cuci",
