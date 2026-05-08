@@ -1,6 +1,7 @@
 import { Container, Row, Col, Card, Image } from "react-bootstrap";
 import { motion } from "framer-motion";
-import { FaQuoteLeft, FaCheckCircle } from "react-icons/fa";
+import { FaQuoteLeft, FaCheckCircle, FaInstagram } from "react-icons/fa";
+import { SiTiktok } from "react-icons/si";
 
 // Import Logo Brand
 import logoRyoki from "../assets/logoRyoki.jpg";
@@ -13,18 +14,24 @@ const partnerData = [
     logo: logoRyoki,
     feedback: "Transformasi digital yang luar biasa. Strategi iklan yang presisi membantu produk kami menjangkau audiens yang tepat secara efektif.",
     owner: "Brand Partner - Beauty & Health",
+    instagram: "https://www.instagram.com/ryokiofficial.id/",
+    tiktok: "https://www.tiktok.com/@ryokijapanskin",
   },
   {
     name: "Garasi Agan",
     logo: logoGarasi,
     feedback: "Manajemen marketplace dan optimasi SEO produk yang sangat detail. Penjualan semir ban kami meningkat signifikan sejak bekerjasama.",
     owner: "Brand Partner - Automotive Care",
+    instagram: "https://www.instagram.com/garasiagan.official/",
+    tiktok: "https://www.tiktok.com/@garasi.agan.official",
   },
   {
     name: "Otsky Store",
     logo: logoOtsky,
     feedback: "Kreativitas dalam konten dan penguasaan algoritma sosial media yang jempolan. Sangat membantu brand fashion kami tetap relevan.",
     owner: "Brand Partner - Clothing & Apparel",
+    instagram: "https://www.instagram.com/otsky_store/",
+    tiktok: "https://www.tiktok.com/@otsky_official",
   },
 ];
 
@@ -105,6 +112,14 @@ const Partners = () => {
                         <small className="text-warning fw-medium partner-info-owner" style={{ fontSize: "0.75rem" }}>
                           {item.owner}
                         </small>
+                      </div>
+                      <div className="ms-2 d-flex align-items-center gap-2">
+                        <a href={item.instagram} className="text-secondary p-1 d-flex align-items-center" target="_blank" rel="noopener noreferrer" title="Instagram">
+                          <FaInstagram size={20} />
+                        </a>
+                        <a href={item.tiktok} className="text-secondary p-1 d-flex align-items-center" target="_blank" rel="noopener noreferrer" title="TikTok">
+                          <SiTiktok size={20} />
+                        </a>
                       </div>
                     </div>
                   </Card.Body>

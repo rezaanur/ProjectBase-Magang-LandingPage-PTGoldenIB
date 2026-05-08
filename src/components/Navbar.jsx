@@ -9,16 +9,19 @@ const NavigationBar = () => {
   const { scrollY } = useScroll();
 
   // LOGIKA DARK MODE
-  const [isDarkMode, setIsDarkMode] = useState(true);
+  const [isDarkMode, setIsDarkMode] = useState(() => {
+    if (typeof window !== "undefined") {
+      const savedMode = localStorage.getItem("isDarkMode");
+      return savedMode !== null ? savedMode === "true" : true;
+    }
+    return true;
+  });
 
-  // Efek untuk mengubah atribut tema di tag <html>
+  // Efek untuk mengubah atribut tema di tag <html> dan menyimpan pilihan pengguna
   useEffect(() => {
     const htmlElement = document.documentElement;
-    if (isDarkMode) {
-      htmlElement.setAttribute("data-bs-theme", "dark");
-    } else {
-      htmlElement.setAttribute("data-bs-theme", "light");
-    }
+    htmlElement.setAttribute("data-bs-theme", isDarkMode ? "dark" : "light");
+    localStorage.setItem("isDarkMode", isDarkMode.toString());
   }, [isDarkMode]);
 
   useMotionValueEvent(scrollY, "change", (latest) => {

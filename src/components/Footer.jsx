@@ -52,14 +52,16 @@ const Footer = () => {
           </Col>
           <Col lg={4}>
             <h5 className="fw-bold mb-3 footer-header">Ikuti Kami</h5>
-            <div className="d-flex gap-3 social-icons-footer">
+            <div className="d-flex flex-column gap-2 social-icons-footer">
               {/* Instagram dengan target _blank */}
-              <a href="https://www.instagram.com/ptgoldeniib/" className="text-white fs-4" target="_blank" rel="noopener noreferrer">
-                <FaInstagram />
+              <a href="https://www.instagram.com/ptgoldeniib/" className="text-white d-flex align-items-center gap-2 text-decoration-none" target="_blank" rel="noopener noreferrer">
+                <FaInstagram size={20} />
+                <span className="small">@ptgoldeniib</span>
               </a>
               {/* TikTok dengan target _blank */}
-              <a href="https://www.tiktok.com/@lifeatgoldenib" className="text-white fs-4" target="_blank" rel="noopener noreferrer">
-                <FaTiktok />
+              <a href="https://www.tiktok.com/@lifeatgoldenib" className="text-white d-flex align-items-center gap-2 text-decoration-none" target="_blank" rel="noopener noreferrer">
+                <FaTiktok size={20} />
+                <span className="small">@lifeatgoldenib</span>
               </a>
             </div>
             <p className="small text-secondary mt-4 footer-copyright">&copy; 2026 PT Golden IB. All Rights Reserved.</p>
