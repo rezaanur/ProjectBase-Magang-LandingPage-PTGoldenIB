@@ -42,11 +42,11 @@ Ikuti langkah-langkah di bawah ini untuk menyalin proyek dan memasang seluruh _d
 Buka terminal atau command prompt Anda, lalu jalankan perintah berikut:
 
 ```Terminal (Bash / Terminal Code Editor *VSCode Recommended)
-git clone <URL_REPOSITORI_ANDA>
+git clone https://github.com/rezaanur/ProjectBase-Magang-LandingPage-PTGoldenIB.git
 
 ```
 
-_Catatan: Ganti `<URL_REPOSITORI_ANDA>` dengan tautan git dari repositori ini._
+_Catatan: Ganti `<URL_REPOSITORI_ANDA> atau sebagai contoh https://github.com/rezaanur/ProjectBase-Magang-LandingPage-PTGoldenIB.git` dengan tautan git dari repositori ini._
 
 ### 2. Masuk ke Direktori Proyek
 
